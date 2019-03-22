@@ -1,0 +1,26 @@
+<h1>Update sighting</h1>
+
+<%= form_for @sighting  do |e| %>
+
+<%= e.hidden_field :animal_id %>
+
+<%= e.label :date %>
+<%= e.text_field :date %>
+
+<%= e.label :time %>
+<%= e.text_field :time %>
+
+<%= e.label :latitude %>
+<%= e.text_field :latitude %>
+
+<%= e.label :longitude %>
+<%= e.text_field :longitude %>
+
+<%= e.label :region %>
+<%= e.text_field :region %>
+
+<%= e.submit "Update" %>
+
+
+
+<%end%>

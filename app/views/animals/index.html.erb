@@ -1,0 +1,15 @@
+<h1>Welcome to the Home Page</h1>
+
+
+
+<%= link_to 'Add an Animal', new_animal_path %>
+
+<% @animal.each do | list | %>
+    <li> <%=list.common_name %>
+    <%= link_to 'More Info', animal_path(list) %>
+    <%= link_to 'Update', edit_animal_path(list) %>
+    <%= link_to 'Delete', animal_path(list), method: :delete %>
+    </li>
+    
+    
+<% end %>

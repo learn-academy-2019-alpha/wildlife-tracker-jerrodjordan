@@ -1,0 +1,26 @@
+<h1>Add an a sighting of an aminal</h1>
+
+<%= form_for @sighting, url: {action: :create} do |e| %>
+
+<%= e.hidden_field :animal_id %>
+
+<%= e.label :date %>
+<%= e.text_field :date %>
+
+<%= e.label :time %>
+<%= e.text_field :time %>
+
+<%= e.label :latitude %>
+<%= e.text_field :latitude %>
+
+<%= e.label :longitude %>
+<%= e.text_field :longitude %>
+
+<%= e.label :region %>
+<%= e.select :region, [['SD','SD'],['LA','LA'],['SF','SF']] %>
+
+<%= e.submit %>
+
+
+
+<%end%>

@@ -1,0 +1,18 @@
+<h1>Add an animal</h1>
+
+<%= form_for @animal do |e| %>
+
+<%= e.label :name %>
+<%= e.text_field :common_name %>
+
+<%= e.label :latin_name %>
+<%= e.text_field :latin_name %>
+
+<%= e.label :kingdom %>
+<%= e.text_field :kingdom %>
+
+<%= e.submit %>
+
+
+
+<%end%>
